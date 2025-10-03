@@ -1,0 +1,27 @@
+---
+const today = new Date();
+---
+
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.6);
+        color: white;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px 10px 0px 0px;
+        height: 60px;
+    }
+
+    .footer p {
+        text-align: center;
+        padding: 0%;
+    }
+</style>
+
+<div class="footer">
+    <p>&copy; {today.getFullYear()} Goons Tower Defense. All rights reserved.</p>
+</div>
