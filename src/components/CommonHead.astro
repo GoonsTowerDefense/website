@@ -2,10 +2,32 @@
 const { title } = Astro.props;
 import ClientRouter from "astro/components/ClientRouter.astro";
 ---
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>GTD | {title}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>GTD | {title}</title>
 
-    <ClientRouter />
+<!-- Primary Meta Tags -->
+<meta name="title" content=GTD | {title} />
+<meta name="geo.region" content="EN-US" />
+    
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
+    
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iam4pple.com" />
+<meta property="og:title" content=GTD | {title} />
+<meta property="og:locale" content="en_US" />
+    
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://iam4pple.com" />
+<meta name="twitter:title" content=GTD | {title} />
+    
+<!-- Additional meta tags -->
+<meta name="theme-color" content="dark" />
+<meta name="referrer" content="no-referrer" />
+<meta name="generator" content={Astro.generator} />
+
+<ClientRouter />
