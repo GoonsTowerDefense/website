@@ -8,7 +8,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   integrations: [auth()],
   adapter: cloudflare(),
-  output: 'server',
+  output: 'static',
   image: {
     service: passthroughImageService()
   }
