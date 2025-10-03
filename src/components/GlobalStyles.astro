@@ -1,0 +1,72 @@
+---
+import '@fontsource/alexandria'
+---
+
+<style is:global>
+    body {
+        background-color: rgb(24, 24, 24);
+        font-family: "Alexandria", sans-serif
+    }
+
+    .content-wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between; /* pushes text left & image right */
+        align-items: center;            /* vertically centers */
+        gap: 2rem;
+    }
+
+    .text-side {
+        flex: 1;  /* allows text to grow */
+    }
+
+    .img-wrapper {
+        width: clamp(250px, 30%, 400px);
+        aspect-ratio: 1 / 1;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* or contain */
+    }
+
+
+    h1 {
+        color: gray;
+        text-align: center;
+    }
+
+    li {
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 50%;
+        padding-top: 1%;
+    }
+
+
+
+    /* Paragraph spacing and alignment for mobile */
+    @media (max-width: 768px) {
+        .content-wrapper {
+            flex-direction: column; /* stack text above image */
+            align-items: center;
+        }
+
+        .img-wrapper {
+            width: 80%; /* bigger on mobile */
+        }
+    }
+
+
+</style>

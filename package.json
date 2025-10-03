@@ -6,9 +6,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "host": "astro dev --host"
   },
   "dependencies": {
-    "astro": "^5.13.7"
+    "@astrojs/cloudflare": "^12.6.8",
+    "@astrojs/db": "^0.17.2",
+    "@auth/core": "^0.37.4",
+    "@fontsource/alexandria": "^5.2.7",
+    "astro": "^5.13.7",
+    "auth-astro": "^4.2.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
   }
 }
