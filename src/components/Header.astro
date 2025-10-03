@@ -71,24 +71,21 @@
         z-index: 999; /* Still above main content */
     }
 
+    .mobile-menu a {
+        padding: 12px;
+        text-align: center;
+        border-top: 1px solid #444;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
 
-
-.mobile-menu a {
-    padding: 12px;
-    text-align: center;
-    border-top: 1px solid #444;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hover effect for mobile menu links */
-.mobile-menu a:hover {
-    background-color: #555;
-    color: lightcoral;
-    border-radius: 5px;
-}
-
+    /* Hover effect for mobile menu links */
+    .mobile-menu a:hover {
+        background-color: #555;
+        color: lightcoral;
+        border-radius: 5px;
+    }
 
     /* Responsive Styles */
     @media (max-width: 768px) {
@@ -114,6 +111,7 @@
     </div>
 
     <div class="nav-right">
+        <a href="https://discord.gg/7eXJ5252RW">Join the Discord!</a>
         <a href="https://example.com">IP: play.gtdmc.org</a>
     </div>
 
