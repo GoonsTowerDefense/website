@@ -15,15 +15,23 @@ const today = new Date();
         text-align: center;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px 10px 0px 0px;
-        height: 60px;
+        height: 40px;
     }
 
     .footer p {
         text-align: center;
+        margin: 0em;
         padding: 0%;
+        font-size: medium;
+    }
+
+    .smaller {
+        color: dimgray;
     }
 </style>
 
 <div class="footer">
+    <p class="smaller" style="text-align: right; font-size: small;">Built with {Astro.generator}</p>
     <p>&copy; {today.getFullYear()} Goons Tower Defense. All rights reserved.</p>
+
 </div>
