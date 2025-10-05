@@ -1,10 +1,33 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 ---
+
+<style>
+    h2 {
+        text-align: center; 
+        padding: 0%;
+    }
+
+    a {
+        color: white;
+        background-color: dimgray;
+        text-decoration: none;
+        padding: 10px;
+        margin: 6px;
+        border-radius: 20%;
+    }
+
+    li {
+        margin: 12px;
+        padding: 10px;
+        list-style: none;
+    }
+</style>
+
 <Layout title="Members">
     <div class="text-side">
-        <p>
-            <a href="/members/core/">The CORE Members</a>
-        </p>    
+        <h2>
+            <li><a href="/members/core/">The CORE Members</a></li>
+        </h2>    
     </div>
 </Layout>

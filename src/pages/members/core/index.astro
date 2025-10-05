@@ -1,13 +1,36 @@
 ---
 import Layout from "../../../layouts/Layout.astro"
 ---
+
+<style>
+    h2 {
+        text-align: center; 
+        padding: 0%;
+    }
+
+    a {
+        color: white;
+        background-color: dimgray;
+        text-decoration: none;
+        padding: 10px;
+        margin: 6px;
+        border-radius: 20%;
+    }
+
+    li {
+        margin: 12px;
+        padding: 10px;
+        list-style: none;
+    }
+</style>
+
 <Layout title="CORE">
     <div class="text-side">
-        <p>
-            <a href="./4pple">4pple</a>
-            <a href="./Gmo">Gmo</a>
-            <a href="./Kaleb">Kaleb</a>
-            <a href="./Mars">Mars</a>
-        </p>
+        <h2>
+            <li><a href="./4pple">4pple</a></li>
+            <li><a href="./Gmo">Gmo</a></li>
+            <li><a href="./Kaleb">Kaleb</a></li>
+            <li><a href="./Mars">Mars</a></li>
+        </h2>
     </div>
 </Layout>
