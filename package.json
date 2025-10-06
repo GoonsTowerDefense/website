@@ -14,9 +14,12 @@
     "@auth/core": "^0.37.4",
     "@fontsource/alexandria": "^5.2.7",
     "astro": "^5.13.7",
-    "auth-astro": "^4.2.0"
+    "auth-astro": "^4.2.0",
+    "better-auth": "^1.3.26",
+    "better-sqlite3": "^12.4.1"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "wrangler": "^4.36.0"
   }
 }
